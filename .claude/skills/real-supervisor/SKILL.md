@@ -1,5 +1,5 @@
 ---
-name: supervisor
+name: real-supervisor
 version: 1.0.0
 description: Build, create, implement, review, fix, and improve complex multi-step projects. Orchestrates specialized worker agents through a structured, resumable workflow with spec-driven communication.
 ---

@@ -1,3 +1,10 @@
 {
-  "hooks": {}
+  "hooks": {
+    "SubagentStop": [{
+      "hooks": [{
+        "type": "prompt",
+        "prompt": "Log subagent outputs"
+      }]
+    }]
+  }
 }
