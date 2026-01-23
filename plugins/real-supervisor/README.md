@@ -181,6 +181,48 @@ The skill creates all outputs in `.supervisor/`:
 - **Usage Examples** - [skills/real-supervisor/examples.md](./skills/real-supervisor/examples.md)
 - **Hook Documentation** - [hooks/README.md](./hooks/README.md)
 
+## Edge Cases
+
+### PRD Modified Between Sessions
+
+If you modify the PRD file after starting a session:
+- The supervisor will use the original PRD path from state.json
+- To use the modified PRD, either:
+  - Start a fresh session (decline resumption)
+  - Or manually update `prd_path` in state.json before resuming
+
+### State File Corrupted
+
+If `.supervisor/state.json` is corrupted or invalid:
+- Delete `.supervisor/state.json`
+- Re-run the command to start fresh
+- Previous outputs in `.supervisor/output/` will be preserved
+
+### Output Files Manually Deleted
+
+If you delete files from `.supervisor/output/`:
+- The supervisor will detect missing files during resumption
+- You will be prompted to either:
+  - Restart from the step that produces the missing file
+  - Or start a fresh session
+
+### Multiple PRDs in Same Directory
+
+To work on multiple projects in the same directory:
+- Complete or cancel the current session first
+- Archive `.supervisor/` directory:
+  ```bash
+  mv .supervisor .supervisor_project1
+  ```
+- Start new session for the second PRD
+
+### Session Interrupted During HIL Gate
+
+If interrupted while waiting for user input:
+- Re-run the command
+- The supervisor will resume at the same HIL gate
+- You will be prompted again for approval/feedback
+
 ## Troubleshooting
 
 ### Plugin Not Appearing
