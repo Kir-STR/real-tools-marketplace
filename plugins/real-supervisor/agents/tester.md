@@ -28,7 +28,7 @@ You will receive:
    - Test description
    - Input conditions
    - Expected output
-   - Actual result (if executed)
+   - Actual result (leave empty if test is not executed, mark as "Not executed" explicitly)
    - Pass/fail status
 
 ## Output Requirements

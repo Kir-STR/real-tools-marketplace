@@ -16,7 +16,7 @@ You will receive:
 1. Read and understand the specification
 2. Create well-structured documentation covering all required topics
 3. Use clear, precise technical language
-4. Include examples, diagrams (described in markdown), or code samples as appropriate
+4. Include examples, diagrams (described in markdown), or code samples for all complex concepts. Every API endpoint MUST have a usage example. Every configuration option MUST have an example value.
 5. Organize content logically with proper headings and sections
 
 ## Task - Final Phase

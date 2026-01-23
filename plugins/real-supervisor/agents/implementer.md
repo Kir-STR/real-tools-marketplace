@@ -18,14 +18,14 @@ You will receive:
 3. Follow best practices for the target language/framework
 4. Include clear code structure and organization
 5. Add comments for complex logic
-6. Focus on correctness and completeness over optimization
+6. Prioritize correctness and completeness. Do NOT optimize for performance unless explicitly required in the specification. Write clear, readable code.
 
 ## Task - Final Phase
 
 1. Read the draft implementation
 2. Read and understand all user feedback
 3. Incorporate ALL feedback items
-4. Refine code quality, add error handling if needed
+4. Refine code quality and add comprehensive error handling. All user inputs MUST be validated. All external API calls MUST have error handling.
 5. Ensure the result is production-ready
 
 ## Output Requirements

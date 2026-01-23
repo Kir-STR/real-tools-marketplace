@@ -24,7 +24,7 @@ The **Real Supervisor Plugin** implements the **Supervisor Pattern** - it acts a
 ## Plugin Components
 
 - **1 skill**: `real-supervisor` - Orchestrates the 14-step workflow
-- **6 agents**: Analyst, Designer, Implementer, Writer, Critique, Tester
+- **7 agents**: Explore, Analyst, Designer, Implementer, Writer, Critique, Tester
 - **2 commands**: `/rs` (quick alias) and `/supervisor` (full name)
 - **3 hooks**:
   - `SubagentStop` - Logs agent outputs for audit trail
@@ -258,18 +258,21 @@ To rewind to a checkpoint:
 ```
 Follow the prompts to select which checkpoint to restore.
 
-## Custom Agents
+## Worker Agents
 
-The plugin includes pre-defined agents:
+The Real Supervisor uses specialized worker agents that are automatically discovered from the `agents/` directory:
 
-- **Analyst**: Requirements analysis and specification generation
-- **Designer**: UI/UX designs, architecture diagrams, system designs
-- **Implementer**: Code implementation
-- **Writer**: Documentation and technical writing
-- **Tester**: Testing and quality assurance
-- **Critique**: Critical review and feedback
+- **Explore** - PRD analysis and requirements extraction
+- **Analyst** - Requirements analysis and specification generation
+- **Designer** - UI/UX designs, architecture diagrams, system designs
+- **Implementer** - Code implementation
+- **Writer** - Documentation and technical writing
+- **Critique** - Critical review and feedback
+- **Tester** - Test plan and test case generation
 
-You can also modify the agent definitions to add your own custom agents.
+Claude Code automatically selects the appropriate agent based on task characteristics. All agents are available for use throughout the workflow as needed.
+
+You can also modify the agent definitions in the `agents/` directory or add your own custom agents.
 
 ## Output Files
 

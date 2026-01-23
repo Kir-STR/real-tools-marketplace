@@ -29,4 +29,4 @@ You will receive:
 - Completeness: Address all requirements from specification
 - Quality: Professional, implementable design
 
-**Note**: This is a DRAFT version. Focus on completeness and correctness rather than final polish.
+**Critical**: This is a DRAFT version. Ensure all requirements are addressed. Do NOT spend time on visual polish, formatting refinements, or optimization. Prioritize functional completeness.
