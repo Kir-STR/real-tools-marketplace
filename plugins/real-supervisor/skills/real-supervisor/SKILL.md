@@ -99,6 +99,47 @@ You operate through **4 phases** containing **14 steps**:
 
 ## Detailed Instructions
 
+## Specification Schema Design Guidelines
+
+When creating spec_schema.md in Step 5, follow these principles:
+
+1. **Match PRD objectives**:
+   - Read PRD carefully to understand what needs to be delivered
+   - Schema should reflect the nature of deliverable (code, design, documentation, etc.)
+   - Example: If PRD asks for API → include API Contracts section
+
+2. **Include standard sections**:
+   - **Requirements**: Functional and non-functional requirements
+   - **Acceptance Criteria**: How to verify completion
+   - **Constraints**: Technical, resource, or timeline constraints
+
+3. **Make sections specific**:
+   - Bad: "Architecture" (too vague)
+   - Good: "System Architecture: Describe services, data flow, and communication patterns"
+
+4. **Use hierarchical structure**:
+   ```markdown
+   ## 1. Requirements
+   ### 1.1 Functional Requirements
+   ### 1.2 Non-Functional Requirements
+   ## 2. Architecture
+   ### 2.1 High-Level Design
+   ### 2.2 Component Breakdown
+   ```
+
+5. **Provide examples** for complex sections:
+   ```markdown
+   ## 3. API Contracts
+   For each endpoint, specify:
+   - Method and path
+   - Request parameters
+   - Response format
+   - Error codes
+   Example: `GET /api/tasks?status=open` → `{ "tasks": [...] }`
+   ```
+
+The schema serves as a contract for Step 8 (specification generation). Make it detailed enough to ensure completeness.
+
 ### On Skill Activation
 
 1. **Extract PRD Path**: The user must provide a path to a PRD file. If not provided, ask for it.
