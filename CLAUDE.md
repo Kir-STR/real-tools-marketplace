@@ -6,15 +6,16 @@ Claude Code plugin marketplace **Real Tools**.
 ## Version Information
 
 - **Marketplace Version**: 1.0.0
-- **Repository**: https://github.com/Kir-STR/claude-real-tools
+- **Repository**: https://github.com/Kir-STR/real-tools-marketplace
 
 ## Repository Structure
 
 ```
-claude-real-tools/                               # Marketplace root
+real-tools-marketplace/                          # Marketplace root
 ├── .claude-plugin/
 │   └── marketplace.json                         # Marketplace configuration
 ├── plugins/
+│   └── real-tools/                              # Main plugin
 ├── README.md                                    # Marketplace documentation (for users)
 ├── CLAUDE.md                                    # This file (for Claude Code)
 └── LICENSE
@@ -23,7 +24,7 @@ claude-real-tools/                               # Marketplace root
 
 ### Notes
 
-1. Plugins manifests goes in `plugins/{plugin-name}/.claude-plugin/plugin.json`
+1. Plugin manifests go in `plugins/{plugin-name}/.claude-plugin/plugin.json`
 2. Plugin components (skills, commands, hooks) go under `plugins/{plugin-name}/`
 
 ## Do Not Create
@@ -34,5 +35,5 @@ claude-real-tools/                               # Marketplace root
 ## Important Notes
 
 - This is a marketplace repository
-- Users install via: `/plugin marketplace add Kir-STR/claude-real-tools`
+- Users install via: `/plugin marketplace add Kir-STR/real-tools-marketplace`
 - Keep all documentation concise and structured

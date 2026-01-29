@@ -2,7 +2,7 @@
 description: Orchestrates complex, multi-step projects through structured, resumable workflow
 ---
 
-The Real Supervisor skill implements a supervisor-worker pattern to orchestrate complex projects from requirements to final deliverables.
+The Supervisor skill implements a supervisor-worker pattern to orchestrate complex projects from requirements to final deliverables.
 
 ## Usage
 

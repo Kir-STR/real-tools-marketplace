@@ -1,6 +1,6 @@
-# Real Supervisor Usage Examples
+# Supervisor Usage Examples
 
-This document provides practical examples of using the Real Supervisor skill for various project types.
+This document provides practical examples of using the Supervisor skill for various project types.
 
 ## Example 1: Build a REST API
 

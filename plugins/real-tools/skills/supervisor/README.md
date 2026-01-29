@@ -1,6 +1,6 @@
-# Real Supervisor Skill
+# Supervisor Skill
 
-The Real Supervisor orchestrates complex, multi-step projects through a structured, resumable workflow with specialized worker agents.
+The Supervisor skill orchestrates complex, multi-step projects through a structured, resumable workflow with specialized worker agents.
 
 ## Overview
 
@@ -518,7 +518,7 @@ The supervisor explicitly avoids work not required by the PRD:
 
 ## Components
 
-The Real Supervisor skill consists of:
+The Supervisor skill consists of:
 
 - **SKILL.md** - Core supervisor instructions for Claude Code
 - **examples.md** - Usage examples, common patterns, and structure examples
@@ -547,4 +547,4 @@ The supervisor implements these principles:
 
 Skill version: 1.0.0
 
-Part of Real Supervisor Plugin v1.0.0
+Part of Real Tools Plugin v1.0.0

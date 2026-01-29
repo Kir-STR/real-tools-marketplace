@@ -1,5 +1,5 @@
 {
-  "name": "real-tools",
+  "name": "real-tools-marketplace",
   "owner": {
     "name": "Kir-STR"
   },
@@ -9,15 +9,15 @@
   },
   "plugins": [
     {
-      "name": "real-supervisor",
-      "source": "./plugins/real-supervisor",
+      "name": "real-tools",
+      "source": "./plugins/real-tools",
       "description": "Powerful Claude Code plugins that manage complex, multi-stage projects using a structured, repeatable workflow.",
       "version": "1.0.0",
       "author": {
         "name": "Kir-STR"
       },
-      "homepage": "https://github.com/Kir-STR/claude-real-tools",
-      "repository": "https://github.com/Kir-STR/claude-real-tools.git",
+      "homepage": "https://github.com/Kir-STR/real-tools-marketplace",
+      "repository": "https://github.com/Kir-STR/real-tools-marketplace.git",
       "license": "MIT",
       "keywords": [
         "supervisor",
