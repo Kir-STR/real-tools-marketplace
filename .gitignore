@@ -51,7 +51,3 @@ coverage/
 # Backup files
 *.bak
 *.backup
-
-# Old supervisor-skill directory (deprecated, for reference only)
-# Uncomment the following line if you want to exclude it from git
-# supervisor-skill/

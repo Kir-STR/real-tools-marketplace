@@ -1,6 +1,6 @@
-# Real Supervisor Skill
+# Supervisor Skill
 
-The Real Supervisor orchestrates complex, multi-step projects through a structured, resumable workflow with specialized worker agents.
+The Supervisor orchestrates complex, multi-step projects through a structured, resumable workflow with specialized worker agents.
 
 ## Overview
 
@@ -48,7 +48,7 @@ The supervisor selects the appropriate agent based on deliverable type and task 
 
 ```
 ┌──────────────────────────────────────────────┐
-│  USER: /rs path/to/prd.md                    │
+│  USER: /real-tools:supervisor path/to/prd.md                    │
 └────────────────────┬─────────────────────────┘
                      ▼
 ┌──────────────────────────────────────────────┐
@@ -151,7 +151,7 @@ The file extension (`.js`, `.py`, `.md`, etc.) is determined by the deliverable 
 If a session is interrupted, simply re-run the command:
 
 ```bash
-/rs path/to/prd.md
+/real-tools:supervisor path/to/prd.md
 ```
 
 The supervisor:
@@ -253,7 +253,7 @@ For complex projects:
 ls path/to/prd.md
 
 # Use absolute path if needed
-/rs /full/path/to/prd.md
+/real-tools:supervisor /full/path/to/prd.md
 ```
 
 ### Issue: Agent fails during execution
@@ -277,7 +277,7 @@ ls .supervisor/state.json
 
 # If corrupted, delete and start fresh
 rm -rf .supervisor/
-/rs path/to/prd.md
+/real-tools:supervisor path/to/prd.md
 ```
 
 ### Issue: Final deliverable doesn't match expectations
@@ -325,7 +325,7 @@ The supervisor explicitly avoids work not required by the PRD:
 
 ## Components
 
-The Real Supervisor skill consists of:
+The Supervisor skill consists of:
 
 - **SKILL.md** - Core supervisor instructions for Claude Code
 - **examples.md** - Usage examples, common patterns, and structure examples
@@ -354,4 +354,4 @@ The supervisor implements these principles:
 
 Skill version: 1.0.0
 
-Part of Real Supervisor Plugin v1.0.0
+Part of Supervisor Plugin v1.0.0

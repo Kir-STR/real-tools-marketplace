@@ -1,5 +1,5 @@
 {
-  "name": "real-supervisor",
+  "name": "real-tools",
   "version": "1.0.0",
   "description": "A powerful Claude Code plugin that orchestrates complex, multi-step projects through a structured, resumable workflow with specialized worker agents.",
   "author": {
@@ -7,11 +7,10 @@
     "email": "",
     "url": "https://github.com/Kir-STR"
   },
-  "homepage": "https://github.com/Kir-STR/claude-real-tools",
-  "repository": "https://github.com/Kir-STR/claude-real-tools.git",
+  "homepage": "https://github.com/Kir-STR/real-tools-marketplace",
+  "repository": "https://github.com/Kir-STR/real-tools-marketplace.git",
   "license": "MIT",
   "keywords": [
-    "supervisor",
     "orchestration",
     "workflow",
     "agents",

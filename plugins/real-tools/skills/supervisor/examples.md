@@ -1,6 +1,6 @@
-# Real Supervisor Usage Examples
+# Supervisor Usage Examples
 
-This document provides practical examples of using the Real Supervisor skill for various project types.
+This document provides practical examples of using the Supervisor skill for various project types.
 
 ## Example 1: Build a REST API
 
@@ -41,7 +41,7 @@ Complete API implementation with Express.js, including route handlers, middlewar
 ### Invocation
 
 ```bash
-/rs api_requirements.md
+/real-tools:supervisor api_requirements.md
 ```
 
 ### Workflow
@@ -182,7 +182,7 @@ Complete markdown documentation ready for GitHub wiki.
 ### Invocation
 
 ```bash
-/rs docs_requirements.md
+/supervisor docs_requirements.md
 ```
 
 ### Key Difference
@@ -212,7 +212,7 @@ Your session was interrupted during draft creation. You want to resume.
 
 1. **Re-run the same command:**
    ```bash
-   /rs api_requirements.md
+   /supervisor api_requirements.md
    ```
 
 2. **Supervisor detects existing state:**
@@ -261,7 +261,7 @@ You've completed the draft but want to go back and modify the specification befo
 
 5. **Re-run supervisor:**
    ```bash
-   /rs api_requirements.md
+   /real-tools:supervisor api_requirements.md
    ```
    Supervisor continues from Step 10 with modified context.
 
@@ -328,7 +328,7 @@ During plan approval (Step 7), you realize the approach is wrong.
 
 4. **Start fresh:**
    ```bash
-   /rs updated_requirements.md
+   /real-tools:supervisor updated_requirements.md
    ```
 
 ---
@@ -369,7 +369,7 @@ Complete feature with backend routes and React components, ready to integrate.
 ### Invocation
 
 ```bash
-/rs feature_requirements.md
+/real-tools:supervisor feature_requirements.md
 ```
 
 ### Workflow Notes

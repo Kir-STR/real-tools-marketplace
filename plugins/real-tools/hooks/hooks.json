@@ -1,5 +1,5 @@
 {
-  "description": "Real Supervisor plugin hooks for enhanced workflow management and logging",
+  "description": "Real Tools plugin hooks for enhanced workflow management and logging",
   "hooks": {
     "SubagentStop": [
       {
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "When a new session starts with the Real Supervisor plugin active, check if there are any interrupted supervisor sessions that can be resumed"
+            "prompt": "When a new session starts with the Real Tools plugin active, check if there are any interrupted supervisor sessions that can be resumed"
           }
         ]
       }
